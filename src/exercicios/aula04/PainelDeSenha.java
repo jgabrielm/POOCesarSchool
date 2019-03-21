@@ -2,7 +2,15 @@ package exercicios.aula04;
 
 public class PainelDeSenha {
 	
-	private int senhaAtual = 95;
+	private int senhaAtual;
+	
+	public PainelDeSenha() {
+		
+	}
+	
+	public PainelDeSenha (int senhaAtual) {
+		this.senhaAtual = senhaAtual;
+	}
 	
 	public void chamarProximo() {
 		this.senhaAtual++;
@@ -15,7 +23,7 @@ public class PainelDeSenha {
 	}
 	
 	public static void main(String[] args) {
-		PainelDeSenha painel = new PainelDeSenha();
+		PainelDeSenha painel = new PainelDeSenha(99);
 		painel.chamarProximo();
 	}
 }

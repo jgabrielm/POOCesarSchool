@@ -5,8 +5,8 @@ public class ValorReferencia {
 		return x+1;
 	}
 	
-	public void alterarDePassegeiros(Carro carro) {
-		carro.setQuantidadePassageiros(10);
+	public void alterarDePassegeiros(Carro x) {
+		x.setQuantidadePassageiros(10);
 	}
 	
 	public static void main(String[] args) {
@@ -22,23 +22,23 @@ public class ValorReferencia {
 //		System.out.println(j);
 //		System.out.println(i);
 		
-//		Carro carro = new Carro();
-//		carro.setQuantidadePassageiros(5);
-//		
+		Carro carro = new Carro();
+		carro.setQuantidadePassageiros(7);
+		
 //		System.out.println(carro.getQuantidadePassageiros());
 //		valorReferencia.alterarDePassegeiros(carro);
 //		System.out.println(carro.getQuantidadePassageiros());
-//		
-//		Carro carro2 = carro;
+		
+		Carro carro2 = carro;
 //		carro2.setQuantidadePassageiros(4);
 //		System.out.println(carro.getQuantidadePassageiros());
 //		carro.setQuantidadePassageiros(8);
-//		System.out.println(carro.getQuantidadePassageiros());
-//		
-//		carro2 = new Carro();
-//		carro2.setQuantidadePassageiros(12);
-//		System.out.println(carro.getQuantidadePassageiros());
 //		System.out.println(carro2.getQuantidadePassageiros());
+		
+		carro2 = new Carro();
+		carro2.setQuantidadePassageiros(12);
+		System.out.println(carro.getQuantidadePassageiros());
+		System.out.println(carro2.getQuantidadePassageiros());
 		
 	}
 }

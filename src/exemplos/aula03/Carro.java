@@ -12,6 +12,32 @@ public class Carro {
 	private boolean farolLigado;
 	private Motor motor;
 	
+
+	public Carro(int cor, int numeroDePortas, int quantidadePassageiros, String marca, String modelo,
+			double quantidadeDeCombustivel, boolean farolLigado, Motor motor) {
+		this.cor = cor;
+		this.numeroDePortas = numeroDePortas;
+		this.quantidadePassageiros = quantidadePassageiros;
+		this.marca = marca;
+		this.modelo = modelo;
+		this.quantidadeDeCombustivel = quantidadeDeCombustivel;
+		this.farolLigado = farolLigado;
+		this.motor = motor;
+	}
+	
+	public Carro(int cor, String marca) {
+		this.cor = cor;
+		this.marca = marca;
+	}
+	
+	public Carro(int numeroDePortas) {
+		this.numeroDePortas = numeroDePortas;
+	}
+
+	public Carro() {
+		
+	}
+
 	public void ligar() {
 		String ligado = "ligado!";
 		System.out.println(ligado);
@@ -101,11 +127,11 @@ public class Carro {
 	}
 
 	public static void main(String[] args) {
-		Carro carro = new Carro();
+		Carro carro = new Carro(10, "marca");
 		carro.ligar();
-		//System.out.println(carro.getQuantidadeDeCombustivel());
-		//carro.abastecer(10.5);
-		//System.out.println(carro.getQuantidadeDeCombustivel());
-		//carro.acelarar();
+		System.out.println(carro.getQuantidadeDeCombustivel());
+		carro.abastecer(10.5);
+		System.out.println(carro.getQuantidadeDeCombustivel());
+		carro.acelarar();
 	}
 }

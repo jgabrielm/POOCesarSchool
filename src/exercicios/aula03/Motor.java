@@ -8,15 +8,16 @@ public class Motor {
 	
 	public void acelerar() {
 		System.out.println("acelerando!");
+		this.consumirOleo(5);
 	}
 	
 	private void consumirOleo(double quantidadeOleo) {
-		double novaQuantidadeDeOleo  = this.getQuantidadeDeOleo() - quantidadeOleo;
+		double novaQuantidadeDeOleo = this.getQuantidadeDeOleo() - quantidadeOleo;
 		this.setQuantidadeDeOleo(novaQuantidadeDeOleo);
 	}
 
 	public double getQuantidadeDeOleo() {
-		return quantidadeDeOleo;
+		return this.quantidadeDeOleo;
 	}
 
 	public void setQuantidadeDeOleo(double quantidadeDeOleo) {
@@ -24,7 +25,7 @@ public class Motor {
 	}
 
 	public int getPontencia() {
-		return pontencia;
+		return this.pontencia;
 	}
 
 	public void setPontencia(int pontencia) {
@@ -32,7 +33,7 @@ public class Motor {
 	}
 
 	public String getTipo() {
-		return tipo;
+		return this.tipo;
 	}
 
 	public void setTipo(String tipo) {

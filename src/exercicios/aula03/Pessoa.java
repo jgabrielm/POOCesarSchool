@@ -4,14 +4,14 @@ public class Pessoa {
 	
 	private String nome;
 	private int pesoEmKg;
-	private float alturaEmM;
+	private double alturaEmM;
 	private String CPF;
 	private float imc;
 	
 	public Pessoa() {
 	}
 
-	public Pessoa(String nome, int pesoEmKg, float alturaEmM, String CPF) {
+	public Pessoa(String nome, int pesoEmKg, double alturaEmM, String CPF) {
 		this.nome = nome;
 		this.pesoEmKg = pesoEmKg;
 		this.alturaEmM = alturaEmM;
@@ -34,11 +34,11 @@ public class Pessoa {
 		this.pesoEmKg = pesoEmKg;
 	}
 
-	public float getAlturaEmM() {
+	public double getAlturaEmM() {
 		return alturaEmM;
 	}
 
-	public void setAlturaEmM(float alturaEmM) {
+	public void setAlturaEmM(double alturaEmM) {
 		this.alturaEmM = alturaEmM;
 	}
 
@@ -57,5 +57,4 @@ public class Pessoa {
 	public void setImc(float imc) {
 		this.imc = imc;
 	}
-	
 }

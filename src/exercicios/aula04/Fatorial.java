@@ -19,6 +19,6 @@ public class Fatorial {
 	
 	public static void main(String[] args) {
 		Fatorial fatorial = new Fatorial();
-		System.out.println(fatorial.calcular(0));
+		System.out.println(fatorial.calcular(50));
 	}
 }

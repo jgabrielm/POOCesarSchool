@@ -3,7 +3,7 @@ package exercicios.aula03;
 public class IMC {
 	
 	public void calcular(Pessoa pessoa) {
-		float altura =  pessoa.getAlturaEmM();
+		float altura =  (float)pessoa.getAlturaEmM();
 		float imc = pessoa.getPesoEmKg()/(altura * altura);
 		pessoa.setImc(imc);
 	}

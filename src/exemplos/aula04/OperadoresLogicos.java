@@ -48,7 +48,7 @@ public class OperadoresLogicos {
 	
 	public static void main(String[] args) {
 		OperadoresLogicos ol = new OperadoresLogicos();
-		ol.avaliar();
-		//ol.operadores();
+		//ol.avaliar();
+		ol.operadores();
 	}
 }
