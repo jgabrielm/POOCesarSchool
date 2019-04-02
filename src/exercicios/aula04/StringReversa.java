@@ -15,5 +15,6 @@ public class StringReversa {
 		StringReversa reversa = new StringReversa();
 		reversa.reverter("Java");
 		reversa.reverter("Paralelepipedo");
+		reversa.reverter("revertendo essa string aqui ó!");
 	}
 }

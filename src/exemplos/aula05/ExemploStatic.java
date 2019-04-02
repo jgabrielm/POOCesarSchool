@@ -26,8 +26,8 @@ public class ExemploStatic {
 	}
 	
 	public static void main(String[] args) {
-		ExemploStatic.metodoStatic("Chamando metodo static");
-		
+		//ExemploStatic.metodoStatic("Chamando metodo static");
+//		
 //		System.out.println(ExemploStatic.value);
 //		
 //		ExemploStatic ex1 = new ExemploStatic();

@@ -3,11 +3,17 @@ package exemplos.aula05;
 public class ExemploInicializacao {
 
 	static{
+		System.out.println("Inicializador static");
 		CONSTANT = 100;
 	}
 	
 	{
+		System.out.println("Inicializador nao static");
 		x = 10;
+	}
+	
+	{
+		System.out.println("Inicializador nao static 2");
 	}
 	
 	
@@ -16,6 +22,7 @@ public class ExemploInicializacao {
 	public static final int CONSTANT;
 	
 	public ExemploInicializacao(){
+		System.out.println("Construtor");
 		this.x += 1;
 	}
 	
