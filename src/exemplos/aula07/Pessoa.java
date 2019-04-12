@@ -5,7 +5,7 @@ public class Pessoa {
 	private String nome = "abc";
 	private int idade = 100;
 
-	/*public String toString() {
+	public String toString() {
 		return "ExemploToString [nome=" + nome + ", idade=" + idade + "]";
 	}
 	
@@ -33,7 +33,7 @@ public class Pessoa {
 		} else if (!nome.equals(other.nome))
 			return false;
 		return true;
-	}*/
+	}
 
 
 
