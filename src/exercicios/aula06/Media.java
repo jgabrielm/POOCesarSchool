@@ -12,7 +12,7 @@ public class Media {
 	}
 	
 	public static void main(String... args) {
-		double media = Media.calcular(1,3,5);
+		double media = Media.calcular(1,3,5,10.5,50,-10.5);
 		System.out.println(media);
 	}
 }

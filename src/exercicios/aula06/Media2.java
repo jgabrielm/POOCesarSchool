@@ -7,13 +7,14 @@ public class Media2 {
 	
 	public static double calcular(ArrayList<Double> valores) {
 		
-		if(valores.size() > 0) {
+		int size = valores.size();
+		if(size > 0) {
 			double soma = 0;
 			for(double valor : valores) {
 				soma += valor;
 			}
 			
-			return soma/valores.size();
+			return soma/size;
 		}
 		
 		return 0;
