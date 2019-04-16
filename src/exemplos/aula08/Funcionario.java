@@ -31,4 +31,8 @@ public class Funcionario extends MembroComunidade{
 	public void setSalario(Short salario) {
 		this.salario = salario;
 	}
+	
+	public void metodoFinal() {
+		
+	}
 }

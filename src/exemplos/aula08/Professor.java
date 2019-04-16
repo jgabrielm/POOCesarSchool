@@ -31,6 +31,11 @@ public class Professor extends Funcionario{
 				+ dataNascimento + "]";
 	}
 	
+	@Override
+	public void metodoFinal() {
+		super.metodoFinal();
+	}
+	
 	public static void main(String[] args) {
 		ArrayList<MembroComunidade> membros = new ArrayList<>();
 		
