@@ -1,6 +1,6 @@
 package exercicios.aula07.school.cesar.domain;
 
-import exercicios.aula07.school.cesar.util.Calculadora;
+import static exercicios.aula07.school.cesar.util.Calculadora.getRaizQuadrada;;
 
 public class Quadrado {
 	private double lado;
@@ -10,7 +10,7 @@ public class Quadrado {
 	}
 	
 	public double getDiagonal() {
-		return this.lado * Calculadora.getRaizQuadrada(2);
+		return this.lado * getRaizQuadrada(2);
 	}
 	
 	public static void main(String[] args) {

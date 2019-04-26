@@ -6,7 +6,7 @@ import static java.lang.Double.MIN_VALUE;
 import static java.lang.Double.MAX_VALUE; 
 
 
-public class Despesas {
+public class Despesas extends Object{
 	
 	private ArrayList<Double> valores = new ArrayList<Double>();
 	
@@ -47,8 +47,11 @@ public class Despesas {
 	
 	@Override
 	public String toString() {
-		return "Média de despesas: " + this.getMedia() + ", Maior Despesa: " + this.getMaiorDespesa() + ", Menor despesa: " + this.getMenorDespesa();
+		return "Média de despesas: " + this.getMedia() + ", Maior Despesa: " + this.getMaiorDespesa() + 
+				", Menor despesa: " + this.getMenorDespesa();
 	}
+	
+	
 	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -61,7 +64,7 @@ public class Despesas {
 			System.out.println("Digite um valor numerico ou parar para encerrar:");
 			linha = scanner.nextLine();
 			if(!linha.equals("parar")) {
-				valor = Double.valueOf(linha);
+				valor = Double.parseDouble(linha);
 				despesa.adicionarValor(valor);
 			}else {
 				parar = true;

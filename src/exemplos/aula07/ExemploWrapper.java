@@ -51,6 +51,7 @@ public class ExemploWrapper {
 		long valor = new Long(15);
 		list.add(valor);
 		int valor2 = 7;
-		//list.add(valor2);
+		long abc = valor2;
+		list.add(abc);
 	}
 }
