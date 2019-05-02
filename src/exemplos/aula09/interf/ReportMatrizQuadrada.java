@@ -21,6 +21,11 @@ public class ReportMatrizQuadrada extends ReportMatrizGenerica{
 	public String getDados() {
 		return "";
 	}
+	
+	@Override
+	public String escreverDados(String dados) {
+		return "";
+	}
 
 	
 	public static void main(String[] args) {
@@ -67,5 +72,9 @@ public class ReportMatrizQuadrada extends ReportMatrizGenerica{
 			System.out.println(p.getMetadadados());
 		}
 		
+//		System.out.println(matrizGenerica.escreverDados("abc"));
+//		System.out.println(matrizQuadrada1.escreverDados("quadrada1"));
+//		System.out.println(matrizQuadrada2.escreverDados("quadrada2"));
+//		System.out.println(reportTabela1.escreverDados("tabela1"));
 	}
 }

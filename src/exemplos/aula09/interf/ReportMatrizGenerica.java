@@ -2,7 +2,7 @@ package exemplos.aula09.interf;
 
 import java.io.Serializable;
 
-public abstract class ReportMatrizGenerica implements Serializable, Parseable{
+public abstract class ReportMatrizGenerica implements Serializable, Parseable, Writable{
 
 	private static final long serialVersionUID = 1L;
 	

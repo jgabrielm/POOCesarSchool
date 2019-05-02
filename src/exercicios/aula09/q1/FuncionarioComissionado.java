@@ -1,4 +1,4 @@
-package exercicios.aula09;
+package exercicios.aula09.q1;
 
 public class FuncionarioComissionado extends Funcionario{
 	
