@@ -42,8 +42,13 @@ public abstract class Poligono {
 		}
 		
 		
-		System.out.println(q1 instanceof Quadrilatero);
-		System.out.println(q1 instanceof Retangulo);
+//		if(t1 instanceof TrianguloRetangulo) {
+//			System.out.println(((TrianguloRetangulo)t1).getHipotenusa());
+//		}
+//		
+//		System.out.println(q1 instanceof Quadrilatero);
+//		System.out.println(q1 instanceof Retangulo);
+		
 	}
 
 }

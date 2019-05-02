@@ -26,6 +26,6 @@ public class Conta {
 
 	@Override
 	public String toString() {
-		return "Conta [numero=" + numero + ", saldo=" + saldo + "]";
+		return this.getClass().getSimpleName() + " [numero=" + numero + ", saldo=" + saldo + "]";
 	}
 }
