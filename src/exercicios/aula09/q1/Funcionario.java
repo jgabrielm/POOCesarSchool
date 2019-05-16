@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 public abstract class Funcionario {
 	
-	protected static final double CARGA_HORARIA = 40;
-	
 	protected String nome;
 	protected String CPF;
 	

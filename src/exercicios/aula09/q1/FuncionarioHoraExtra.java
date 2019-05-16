@@ -2,6 +2,7 @@ package exercicios.aula09.q1;
 
 public class FuncionarioHoraExtra extends Funcionario{
 	
+	private static final double CARGA_HORARIA = 40;
 	private static final double BONUS_HORA_EXTRA = 1.5;
 	
 	private double salarioBase;

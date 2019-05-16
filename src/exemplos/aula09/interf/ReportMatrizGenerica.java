@@ -15,7 +15,8 @@ public abstract class ReportMatrizGenerica implements Serializable, Parseable, W
 		this.numeroDimensoesColuna = numeroDimensoesColuna;
 	}
 
-
+	public abstract String getMetadadados();
+	
 	public abstract String getDados();
 
 }

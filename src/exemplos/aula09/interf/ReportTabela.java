@@ -14,9 +14,12 @@ public class ReportTabela implements Parseable, Serializable, Writable{
 		this.numeroColunas = numeroColunas;
 	}
 
+	@Override
 	public String getMetadadados() {
 		return this.getClass().getSimpleName() + " numeroLinhas: " + this.numeroLinhas 
 				+ " numeroColunas " + this.numeroColunas;
 	}
+
+
 
 }

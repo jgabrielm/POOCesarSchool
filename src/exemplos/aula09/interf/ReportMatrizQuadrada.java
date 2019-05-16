@@ -68,13 +68,13 @@ public class ReportMatrizQuadrada extends ReportMatrizGenerica{
 		ReportMatrizQuadrada matrizQuadrada2 = new ReportMatrizQuadrada(4);
 		parseaveis.add(matrizQuadrada2);
 		
-		for(Parseable p : parseaveis) {
-			System.out.println(p.getMetadadados());
-		}
+//		for(Parseable p : parseaveis) {
+//			System.out.println(p.getMetadadados());
+//		}
 		
-//		System.out.println(matrizGenerica.escreverDados("abc"));
-//		System.out.println(matrizQuadrada1.escreverDados("quadrada1"));
-//		System.out.println(matrizQuadrada2.escreverDados("quadrada2"));
-//		System.out.println(reportTabela1.escreverDados("tabela1"));
+		System.out.println(matrizGenerica.escreverDados("abc"));
+		System.out.println(matrizQuadrada1.escreverDados("quadrada1"));
+		System.out.println(matrizQuadrada2.escreverDados("quadrada2"));
+		System.out.println(reportTabela1.escreverDados("tabela1"));
 	}
 }
