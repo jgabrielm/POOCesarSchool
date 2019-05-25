@@ -1,4 +1,4 @@
-package exemplos.aula12;
+package exemplos.aula13;
 
 public class TesteMetodosStringBuilder{
 
