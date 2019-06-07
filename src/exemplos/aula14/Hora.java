@@ -44,4 +44,28 @@ public class Hora implements Comparable<Hora>{
 		return 0;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + hora;
+		result = prime * result + minutos;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Hora other = (Hora) obj;
+		if (hora != other.hora)
+			return false;
+		if (minutos != other.minutos)
+			return false;
+		return true;
+	}
 }
