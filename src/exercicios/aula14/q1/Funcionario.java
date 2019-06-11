@@ -1,4 +1,4 @@
-package exercicios.aula14;
+package exercicios.aula14.q1;
 
 public class Funcionario {
 	private Double salario;

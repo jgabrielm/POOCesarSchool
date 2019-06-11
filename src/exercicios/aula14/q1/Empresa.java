@@ -1,4 +1,4 @@
-package exercicios.aula14;
+package exercicios.aula14.q1;
 
 import java.util.ArrayList;
 import java.util.Collections;
