@@ -20,15 +20,15 @@ public class Validador{
         System.out.println("Digite seu CPF");
         CharSequence CPF = scanner.nextLine();
         
-        StringBuilder builder = new StringBuilder("Seu CPF È: ");
-        builder.append(Validador.CPFValido(CPF) ? "v·lido" : "inv·lido");
+        StringBuilder builder = new StringBuilder("Seu CPF √©: ");
+        builder.append(Validador.CPFValido(CPF) ? "v√°lido" : "inv√°lido");
         System.out.println(builder);
         
         System.out.println("Digite a placa do seu Carro");
         CharSequence placa = scanner.nextLine();
         
-        builder = new StringBuilder("Sua placa È: ");
-        builder.append(Validador.placaDoCarroValida(placa) ? "v·lida" : "inv·lida");
+        builder = new StringBuilder("Sua placa √©: ");
+        builder.append(Validador.placaDoCarroValida(placa) ? "v√°lida" : "inv√°lida");
         System.out.println(builder);
         scanner.close();
     }

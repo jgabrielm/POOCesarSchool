@@ -28,7 +28,7 @@ public class TesteMetodosCaracter{
         "maiísculo: %s%n", Character.toUpperCase(c));
         System.out.printf("minúsculo: %s%n", Character.toLowerCase(c));
         
-        int radix = 16;
+        int radix = 10;
         System.out.println(Character.digit(c, radix));
         
         scanner.close();
