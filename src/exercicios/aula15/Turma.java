@@ -1,5 +1,6 @@
 package exercicios.aula15;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
@@ -15,20 +16,20 @@ public class Turma {
 	
 	public void imprimirAlunosPorNota() {
 		this.alunos.stream()
-		.sorted((a1,a2) -> a1.getNota().compareTo(a2.getNota()))
+		.sorted(Comparator.comparing(Aluno::getNota))
 		.forEach(System.out::println);
 		System.out.println();
 	}
 	
 	public void imprimirAlunosPorNome() {
 		this.alunos.stream()
-		.sorted((a1,a2) -> a1.getNome().compareTo(a2.getNome()))
+		.sorted(Comparator.comparing(Aluno::getNome))
 		.forEach(System.out::println);
 		System.out.println();
 	}
 	
 	public void imprimirAlunoMaiorNota() {
-		System.out.println(this.alunos.stream().max((a1,a2) -> a1.getNota().compareTo(a2.getNota())).get());
+		System.out.println(this.alunos.stream().max(Comparator.comparing(Aluno::getNota)).get());
 		System.out.println();
 	}
 	

@@ -74,12 +74,14 @@ public class TesteOperacoesLambda {
 		horas.stream().filter(hora -> {
 			return hora.getHora() > 10;
 		}).sorted().forEach(System.out::println);
+		System.out.println();
 
 		// collect
 		Set<Integer> conjunto = lista.stream().filter((x) -> {
 			return x > 5;
 		}).map(x -> x * 10).sorted().collect(Collectors.toSet());
 		System.out.println(conjunto);
+		System.out.println();
 
 		List<Hora> horas2 = horas.stream().filter(hora -> {
 			return hora.getHora() > 10;
@@ -90,10 +92,33 @@ public class TesteOperacoesLambda {
 			return hora.getHora() > 10;
 		}).sorted().collect(Collectors.toMap(Hora::hashCode, Hora::getHora));
 		System.out.println(mapa);
+		System.out.println();
 
 		// range e rangeClosed
 		System.out.println(IntStream.range(0, 5).sum());
 		System.out.println(IntStream.rangeClosed(0, 5).sum());
-
+		System.out.println();
+		
+		//summary statistics
+		System.out.println(IntStream.of(array).summaryStatistics());
+		System.out.println(lista.stream().mapToInt(x -> x).summaryStatistics());
+		System.out.println(horas.stream().mapToInt(hora -> hora.getHora()).summaryStatistics());
+		System.out.println();
+		
+		//comparaçoes multiplas
+		horas.stream().sorted(Comparator.comparing(Hora::getHora).thenComparing(Hora::getMinutos)).forEach(System.out::println);
+		System.out.println();
+		horas.stream().sorted(Comparator.comparing(Hora::getHora).thenComparing(Hora::getMinutos).reversed()).forEach(System.out::println);
+		System.out.println();
+		
+		//distinct
+		lista.stream().distinct().sorted().forEach(System.out::println);
+		
+		//grouping by
+		Map<Integer, List<Hora>> mapHoras = horas.stream().collect(Collectors.groupingBy(Hora::getHora));
+		System.out.println(mapHoras);
+		
+		//agrupamento com contagem
+		
 	}
 }
