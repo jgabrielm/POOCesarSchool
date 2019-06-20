@@ -118,7 +118,6 @@ public class TesteOperacoesLambda {
 		Map<Integer, List<Hora>> mapHoras = horas.stream().collect(Collectors.groupingBy(Hora::getHora));
 		System.out.println(mapHoras);
 		
-		//agrupamento com contagem
 		
 	}
 }
