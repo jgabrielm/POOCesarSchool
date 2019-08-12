@@ -1,5 +1,7 @@
 package exercicios.aula03;
 
+import java.util.Scanner;
+
 public class IMC {
 	
 	public void calcular(Pessoa pessoa) {
@@ -9,10 +11,22 @@ public class IMC {
 	}
 	
 	public static void main(String[] args) {
-		Pessoa pessoa = new Pessoa("Ze", 70, 1.85f, "123456789");
-		IMC imc = new IMC();
+		Scanner scanner = new Scanner(System.in);
 		
+		System.out.println("Digite seu peso em quilos");
+		int peso = scanner.nextInt();
+		
+		System.out.println("Digite sua altura em metros");
+		float altura = scanner.nextFloat();
+		
+		Pessoa pessoa = new Pessoa();
+		pessoa.setAlturaEmM(altura);
+		pessoa.setPesoEmKg(peso);
+		
+		IMC imc = new IMC();
 		imc.calcular(pessoa);
-		System.out.println(pessoa.getImc());
+		System.out.println("Seu IMC é: " + pessoa.getImc());
+		
+		scanner.close();
 	}
 }
