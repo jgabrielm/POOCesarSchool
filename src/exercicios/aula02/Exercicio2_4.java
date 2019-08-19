@@ -6,17 +6,17 @@ public class Exercicio2_4 {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("primeiro numero");
-		double primeiro = input.nextDouble();
+		int primeiro = input.nextInt();
 		
 		System.out.println("segundo numero");
-		double segundo = input.nextDouble();
+		int segundo = input.nextInt();
 		
 		System.out.println("terceiro numero");
-		double terceiro = input.nextDouble();
+		int terceiro = input.nextInt();
 		
 		input.close();
 		
-		System.out.printf("Soma %f%n", primeiro + segundo + terceiro);
-		System.out.printf("Produto %f", primeiro * segundo * terceiro);
+		System.out.printf("Soma %d%n", primeiro + segundo + terceiro);
+		System.out.printf("Produto %d", primeiro * segundo * terceiro);
 	}
 }

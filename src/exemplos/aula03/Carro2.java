@@ -34,7 +34,7 @@ public class Carro2 {
 	public Carro2(int numeroDePortas) {
 		this.numeroDePortas = numeroDePortas;
 	}
-
+	
 	public Carro2() {
 		
 	}
@@ -54,7 +54,7 @@ public class Carro2 {
 		this.setQuantidadeDeCombustivel(novaQuantidadeDeCombustivel);
 	}
 	
-	public void acelarar() {
+	public void acelerar() {
 		this.motor.acelerar();
 		this.consumirCombustível(0.2);
 	}
@@ -133,6 +133,6 @@ public class Carro2 {
 		System.out.println(carro.getQuantidadeDeCombustivel());
 		carro.abastecer(10.5);
 		System.out.println(carro.getQuantidadeDeCombustivel());
-		carro.acelarar();
+		carro.acelerar();
 	}
 }
