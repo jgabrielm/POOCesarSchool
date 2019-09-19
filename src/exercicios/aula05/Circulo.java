@@ -18,7 +18,7 @@ public class Circulo {
 	}
 	
 	public static void main(String[] args) {
-		Circulo circulo = new Circulo(2);
+		Circulo circulo = new Circulo(3);
 		System.out.println(circulo.getArea());
 		
 		System.out.println(Circulo.getGraus());

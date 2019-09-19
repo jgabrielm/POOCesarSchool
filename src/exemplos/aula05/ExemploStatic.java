@@ -15,8 +15,8 @@ public class ExemploStatic {
 	}
 	
 	public static void declararVariavelFinal() {
-		final int x = 10;
-		//x++;
+		final int x = 1;
+		//x = 0;
 		//z++;
 		//PI += 10;
 	}
@@ -26,16 +26,16 @@ public class ExemploStatic {
 	}
 	
 	public static void main(String[] args) {
-		//ExemploStatic.metodoStatic("Chamando metodo static");
-//		
-//		System.out.println(ExemploStatic.value);
-//		
-//		ExemploStatic ex1 = new ExemploStatic();
-//		ExemploStatic ex2 = new ExemploStatic();
-//		
-//		ExemploStatic.incrementarValue(10);
-//		System.out.println(ex1.getValue());
-//		System.out.println(ex2.getValue());
+		ExemploStatic.metodoStatic("Chamando metodo static");
+		
+		System.out.println(ExemploStatic.value);
+		
+		ExemploStatic ex1 = new ExemploStatic();
+		ExemploStatic ex2 = new ExemploStatic();
+		
+		ExemploStatic.incrementarValue(10);
+		System.out.println(ex1.getValue());
+		System.out.println(ex2.getValue());
 		
 		System.out.println(ExemploStatic.PI);
 	}

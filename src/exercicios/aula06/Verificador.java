@@ -28,5 +28,6 @@ public class Verificador {
 		}
 		
 		System.out.println(Verificador.contemRepeticoes(valores));
+		
  	}
 }

@@ -17,11 +17,11 @@ public class VarArgs {
 	
 	public static void main(String...args) {
 		VarArgs varArgs = new VarArgs();
-		/*int soma = varArgs.somar(10,10,20,40,50);
-		System.out.println(soma);*/
+		int soma = varArgs.somar(10,10, 10, 10, 10);
+		System.out.println(soma);
 		
 		int[] valores = {10,50};
-		int soma = varArgs.somar(valores);
+		soma = varArgs.somar(valores);
 		System.out.println(soma);
 	}
 }
