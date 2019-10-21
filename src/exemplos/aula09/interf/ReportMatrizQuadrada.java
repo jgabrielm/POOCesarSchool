@@ -59,6 +59,11 @@ public class ReportMatrizQuadrada extends ReportMatrizGenerica{
 			public String getDados() {
 				return null;
 			}
+
+			@Override
+			public String escreverDados(String dados) {
+				return "";
+			}
 		};
 		parseaveis.add(matrizGenerica);
 		

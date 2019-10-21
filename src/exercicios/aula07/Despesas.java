@@ -6,7 +6,7 @@ import static java.lang.Double.MIN_VALUE;
 import static java.lang.Double.MAX_VALUE; 
 
 
-public class Despesas extends Object{
+public class Despesas {
 	
 	private ArrayList<Double> valores = new ArrayList<Double>();
 	

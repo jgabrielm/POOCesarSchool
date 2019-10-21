@@ -27,8 +27,8 @@ public class ExemploWrapper {
 		
 		Integer int1 = new Integer(10);
 		Integer int2 = int1;
-		Integer int3 =  10;
-		Integer int4 =  new Integer(10);
+		Integer int3 = 10;
+		Integer int4 = new Integer(10);
 		Integer int5 = 10;
 		
 		System.out.println(int1 == int2);
@@ -42,6 +42,9 @@ public class ExemploWrapper {
 		
 		System.out.println(int1 == int5);
 		System.out.println(int1.equals(int5));
+		
+		System.out.println(int3 == int5);
+		System.out.println(int3.equals(int5));
 		
 		boolean b = new Boolean(false);
 		System.out.println(b);

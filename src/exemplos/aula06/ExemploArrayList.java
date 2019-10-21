@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ExemploArrayList {
 	
 	public static void main(String[] args) {
-		ArrayList<String> strings = new ArrayList<String>();
+		ArrayList<String> strings = new ArrayList<>();
 		
 		strings.add("Aaa");
 		strings.add(0,"Bbb");
