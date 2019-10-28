@@ -37,6 +37,7 @@ public class ReportMatrizQuadrada extends ReportMatrizGenerica{
 		Parseable reportTabela2 = new ReportTabela(5, 5);
 		parseaveis.add(reportTabela2);
 		
+		//Classe anonima
 		Parseable parseable = new Parseable() {
 			
 			@Override
@@ -46,6 +47,7 @@ public class ReportMatrizQuadrada extends ReportMatrizGenerica{
 		};
 		parseaveis.add(parseable);
 		
+		//Classe anonima
 		ReportMatrizGenerica matrizGenerica = new ReportMatrizGenerica(10, 2) {
 			
 			private static final long serialVersionUID = 1L;
